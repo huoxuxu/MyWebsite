@@ -1,0 +1,16 @@
+E:\BaiDuYun\WebAmass\bootstrap\Common\bin\Release\Common.dll
+E:\BaiDuYun\WebAmass\bootstrap\Common\bin\Release\Common.pdb
+E:\BaiDuYun\WebAmass\bootstrap\Common\obj\Release\ResolveAssemblyReference.cache
+E:\BaiDuYun\WebAmass\bootstrap\Common\obj\Release\Common.dll
+E:\BaiDuYun\WebAmass\bootstrap\Common\obj\Release\Common.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByBootStrap\Common\bin\Release\Common.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByBootStrap\Common\bin\Release\Common.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByBootStrap\Common\bin\Release\Newtonsoft.Json.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByBootStrap\Common\obj\Release\Common.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByBootStrap\Common\obj\Release\Common.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\Common\bin\Release\Common.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\Common\bin\Release\Common.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\Common\bin\Release\Newtonsoft.Json.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\Common\obj\Release\Common.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\Common\obj\Release\Common.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\Common\obj\Release\Common.csprojResolveAssemblyReference.cache

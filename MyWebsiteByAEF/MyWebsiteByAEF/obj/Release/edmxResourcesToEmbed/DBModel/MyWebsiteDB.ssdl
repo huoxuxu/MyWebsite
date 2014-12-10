@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="solutionmanageModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.1" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="solutionmanageModelStoreContainer">
+    <EntitySet Name="buginfo" EntityType="solutionmanageModel.Store.buginfo" store:Type="Tables" Schema="3219_solutionmanage" />
+    <EntitySet Name="chatinfo" EntityType="solutionmanageModel.Store.chatinfo" store:Type="Tables" Schema="3219_solutionmanage" />
+    <EntitySet Name="errorlog" EntityType="solutionmanageModel.Store.errorlog" store:Type="Tables" Schema="3219_solutionmanage" />
+    <EntitySet Name="questionandanswer" EntityType="solutionmanageModel.Store.questionandanswer" store:Type="Tables" Schema="3219_solutionmanage" />
+  </EntityContainer>
+  <EntityType Name="buginfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" Nullable="false" MaxLength="40" />
+    <Property Name="TriggerBug" Type="varchar" Nullable="false" MaxLength="2000" />
+    <Property Name="ExpectedBehavior" Type="varchar" MaxLength="500" />
+    <Property Name="ObservedBehavior" Type="varchar" MaxLength="500" />
+    <Property Name="DoneWhat" Type="varchar" MaxLength="300" />
+    <Property Name="Repaired" Type="bit" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="Comment" Type="varchar" />
+  </EntityType>
+  <EntityType Name="chatinfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" Nullable="false" MaxLength="40" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Message" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="ReadFlag" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="errorlog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" Nullable="false" MaxLength="40" />
+    <Property Name="ErrorMsg" Type="varchar" Nullable="false" MaxLength="3000" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="varchar" />
+  </EntityType>
+  <EntityType Name="questionandanswer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" Nullable="false" MaxLength="40" />
+    <Property Name="Question" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="Answer" Type="text" Nullable="false" />
+    <Property Name="Keyword" Type="varchar" MaxLength="100" />
+    <Property Name="Hits" Type="int" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>

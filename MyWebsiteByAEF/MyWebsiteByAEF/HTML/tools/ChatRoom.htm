@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--添加此meta可以禁止手机浏览器缩放-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="../../Resource/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../../Resource/JS/bootstrap.min.js" type="text/javascript"></script>
+    <link href="../../Resource/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Resource/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <!--表情-->
+    <script src="../../Resource/Other/ChatRoom/jquery.qqFace.js" type="text/javascript"></script>
+    <link href="../../Resource/Other/ChatRoom/default.css" rel="stylesheet" type="text/css" />
+<title>一聊百聊</title>
+<script type="text/javascript">
+    $(function () {
+        var name = '';
+        $("#gname").focus();
+        /*确定名称按钮*/
+        $("#nameSend").click(function () {
+            name = $("#gname").val().replace(/[ ]/g, "");
+            if (name == '') { return; }
+            $("#gname").attr('disabled', true);
+            //$("#nameSend").attr('disabled', true);
+        });
+        /*加载表情*/
+        $('.emotion').qqFace({
+            id: 'facebox',
+            assign: 'saytext',
+            path: '../../Resource/ChatRoom/arclist/'//表情存放的路径
+        });
+        /*发送按钮*/
+        $("#send").click(function () {
+            if (name == '') { alert('请输入你的名称！'); $("#gname").focus(); return; }
+            var str = $("#saytext").val();
+            if (str.replace(/[ ]/g, "") == '') { return; }
+            if (name != '小丹丹' && name != '徐徐') { return; }
+            str = replace_em(str);
+            $.post('../../NET/chat.ashx?method=insertMessage', { name: name, message: str }, function (da) {
+                if (da == 'xx0') { return; }
+                $("#saytext").val('');
+            });
+            //            str = '<tr><td style="padding-left:36px;"><span class="namespan">' + name + '：</span><b>' + str + '</b></td><td class="fsy">发送于：' + new Date().toTimeString() + '</td></tr>';
+            str = '<tr><td style="padding-left:36px;"><span class="namespan">' + name + '：</span><b title="发送于：' + new Date().toTimeString() + '">' + str + '</b></td></tr>';
+            $("#tabcontext").append(str);
+            scrollToBottom();
+        });
+        /*定时刷新*/
+        setInterval(function () {
+            if (name == '') { return; }
+            if (name != '小丹丹' && name != '徐徐') { return; }
+            $.post('../../NET/chat.ashx?method=getMessage', {}, function (str) {
+                if (str == 'error') { return; }
+                if (str == '') {return;}
+                $("#tabcontext").empty().append(str);
+            });
+        }, 4000);
+    });
+    function replace_em(str) {
+        str = str.replace(/\</g, '&lt;');
+        str = str.replace(/\>/g, '&gt;');
+        str = str.replace(/\n/g, '<br/>');
+        str = str.replace(/\[em_([0-9]*)\]/g, '<img src="../../Resource/ChatRoom/arclist/$1.gif" border="0" />');
+        return str;
+    }
+    function enterIn(evt, yuansuid) {
+        evt = evt ? evt : (window.event ? window.event : null); //兼容IE和FF
+        if (evt.keyCode == 13) {
+            $("#" + yuansuid).trigger("click"); //模拟点击
+        }
+    }
+    function scrollToBottom() {
+        var div = document.getElementById("content");
+        div.scrollTop = div.scrollHeight;
+    }
+</script>
+<style type="text/css">
+    .fsy{color:White;}
+.fsy:hover{color:Black;}
+</style>
+</head>
+<body>
+
+<div class="container" >
+<!--头部-->
+<div class="row">
+<div class="col-xs-12" style="margin-top:16px;">
+<h1 class="text-center" style=" font-family:黑体;">一聊百聊，聊你想聊！<small>--徐徐</small></h1>
+<div class="input-group">
+<span class="input-group-addon">姓名：</span>
+<input id="gname" type="text" class="form-control" placeholder="请输入你的姓名" onkeydown="enterIn(event,'nameSend');">
+<span class="input-group-btn">
+<button id="nameSend" class="btn btn-default" type="button">确定</button>
+</span>
+</div>
+</div>
+</div>
+<!--主体-->
+<div class="row">
+<div class="col-xs-12">
+<div id="content" style="border:1px #000 dashed;height:260px;">
+
+<table id="tabcontext" class="table">
+</table>
+
+</div>
+</div>
+<div class="col-xs-12"><hr /></div>
+<div class="col-xs-12" style="padding-bottom:10px;">
+<textarea id="saytext" name="saytext" class="form-control" rows="3" placeholder="请输入..." onkeydown="enterIn(event,'send');"></textarea>
+</div>
+<div class="col-xs-4"><span class="emotion">表情</span></div>
+<div class="col-xs-4"></div>
+<div class="col-xs-4"><button id="send" type="button" class="btn btn-default btn-block">发送</button></div>
+</div>
+<!--足部-->
+<div class="row">
+<div class="col-xs-12" style="margin-top:20px;">
+<p class="text-center">&copy; 徐徐所有！</p>
+</div>
+</div>  
+</div>
+
+</body>
+</html>

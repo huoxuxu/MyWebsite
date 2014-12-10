@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--添加此meta可以禁止手机浏览器缩放-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="../../Resource/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../../Resource/JS/bootstrap.min.js" type="text/javascript"></script>
+    <link href="../../Resource/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Resource/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Resource/css/header.css" rel="stylesheet" type="text/css" />
+    <title>同步剪切板</title>
+    <script type="text/javascript">
+        $(function () {
+            $.post('../../NET/index.ashx?method=SyncJQB', {}, function (da) {
+                $("#txt").val(da);
+            });
+            $("#txt").blur(function () {
+                $.post('../../NET/index.ashx?method=SyncJQB', { txt: $("#txt").val() }, function (da) {
+                    $("#txt").val(da);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<!--头部-->
+<div style="margin-left:20px; margin-bottom:20px;">
+<table style=" cursor:pointer;">
+<tr><td rowspan="2"><span class="title">花无</span></td><td><span class="subtitle">做一个正直的人,有益于社会的人！</span></td></tr>
+<tr><td><span class="subtitle">huawublog.v5.org</span></td></tr>
+</table>
+</div>
+<!--正文-->
+<textarea id="txt" class="form-control" rows="16"></textarea>
+<p><b>注：</b><br />
+事件写在文本域失去焦点！
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

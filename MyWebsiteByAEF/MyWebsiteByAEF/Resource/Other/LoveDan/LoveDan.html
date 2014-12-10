@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>致小丹丹</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <script src="../javascript/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="garden.js" type="text/javascript"></script>
+    <script src="function.js" type="text/javascript"></script>
+    <script src="snowrose.js" type="text/javascript"></script>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body style="overflow-x:hidden">
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			亲爱的 <font color='red'>小丹丹</font><br/>
+			<!--在情人节来临之际<br>-->
+			我想对你说:<br/><br/>
+			<font color='green'>我会爱你一生一世！</font><br/>
+			<br/>
+			<br/>
+			I want to say:<br />
+			Baby, I love you forever;<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的，这是我们相爱的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你直到永永远远。<br/>
+					<div class="signature">
+						
+					- <font color="blue">徐徐</font></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr />
+<p style="text-align:center;"><a href="../../Index.htm?id=1">进入徐徐的小窝</a></p>
+
+<script type="text/javascript">
+$.fn.snow({
+    minSize: 5, //雪花的最小尺寸
+    maxSize: 50, //雪花的最大尺寸
+    newOn: 800     //雪花出现的频率 这个数值越小雪花越多
+});
+
+var c = document.getElementById("rosew");
+var b = document.body;
+var a = c.getContext('2d');
+with(m=Math)C=cos,S=sin,P=pow;O=a.getImageData(0,0,c.height=f=W=256,f);U=O.data;D={};F=[];function J(p){p[5]=Q=0;for(j=3;j--;)if(!D[Q=(p[j]>>=2)+Q*f])D[Q]=F.push(p)}setInterval(function(){for(i=1e3;i--;){c=i%42*1.35;H=T;T=m.random();A=H*2-1;B=T*2-1;J([S(H*7)*(o=13+5/(.2+P(T*4,4)))-T*50,T*550+500,(l=C(H*7))*o,(G=l/7+.5)-T/4,G]);if(A*A+B*B<1)if(c>32){J([(o=.5/(H+.01)-H*300)*C(n=(j=c&1)?6:4)+(w=T*-f)*S(n)+j*630-390,o*S(n)-w*C(n)+999-j*350,C(B+A)*99-j*50,(P(l=1-B*B,f*6)+C(H+T)+P(C((o*H+o+(B>0?w:-w))/25),30)*l-H+2)/5,o/1e3+.7-o*w/3e5]);J([(o=H*45-20)*C(l=c/.86)+(w=T*T)*f*S(l),C(B/2)*99-w*T*60+436,o*S(l)-w*f*C(l),w*.3+.3,T*.7])}else J([(o=A*(2-T)*(80-c*2))*C(c)-(w=99-C(A)*120-C(T)*(f-c*5)+C(P(1-T,7))*50+c*2)*S(c),(B*2-C(P(T,7))+9)*50,o*S(c)+w*C(c),1-T*.7,P(1-T,9)/4])}for(i=0;i<f*f;m[i++]=f)for(l=4;l--;)U[i*4+l]=255;for(c=C(W),s=S(W),j=F.length;j--;){k=F[j],x=k[0]*c+k[2]*s+99,z=k[0]*s-k[2]*c,y=k[1]-z*.4<<8;for(i=3;i--;)if(z<m[p=y-~x+[0,1,f][i]])for(m[p]=z,l=3;l--;)U[p*4+l]=k[l+3]*f}a.putImageData(O,0,0);W+=.03},T=0)
+
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2006, parseInt(6)-1, 19);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "唉 汝的浏览器太破，不支持特效!<br/>请使用<a href='http://rj.baidu.com/soft/detail/23356.html' target='_blank'>IE9</a>、<a href='http://rj.baidu.com/soft/detail/14744.html?ald' target='_blank'>谷歌浏览器</a>或<a href='http://rj.baidu.com/soft/detail/11843.html' target='_blank'>火狐</a>"; 
+    document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2014, parseInt(2)-1, 5);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "唉 汝的浏览器太破，不支持特效!<br/>请使用<a href='http://rj.baidu.com/soft/detail/23356.html' target='_blank'>IE9</a>、<a href='http://rj.baidu.com/soft/detail/14744.html?ald' target='_blank'>谷歌浏览器</a>或<a href='http://rj.baidu.com/soft/detail/11843.html' target='_blank'>火狐</a>";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>

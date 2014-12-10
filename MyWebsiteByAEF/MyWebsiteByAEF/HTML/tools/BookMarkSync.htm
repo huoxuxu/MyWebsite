@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--添加此meta可以禁止手机浏览器缩放-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="../../Resource/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../../Resource/JS/bootstrap.min.js" type="text/javascript"></script>
+    <link href="../../Resource/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Resource/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Resource/css/header.css" rel="stylesheet" type="text/css" />
+    <title>书签同步工具</title>
+    <script type="text/javascript">
+        $(function () {
+            RefreshBK();
+
+            //添加书签
+            $("#sendBk").click(function () {
+                $("#succ").show();
+                var txt = $("#BkTxt").val();
+                if (txt == '') { return; }
+                $.post('../../NET/index.ashx?method=AddBookMark', { txt: txt }, function (da) {
+                    $("#succ").hide();
+                    if (da != 'success') { return; }
+                    RefreshBK();
+                    alert("添加成功！");
+                });
+            });
+        });
+        function RefreshBK() {
+            $("#succ").show();
+            $.post('../../NET/index.ashx?method=GetBookMark', {}, function (da) {
+                $("#succ").hide();
+                if (da == "error") { alert("读取失败！"); return; }
+                $("#tb").empty().append(da);
+            });
+        }
+        function DeleteBK(eve) {
+            var a = $(eve).attr('id');
+            if(a==''){return;}
+            $.post('../../NET/index.ashx?method=DeleteBookMark', { id: a }, function (da) {
+                if (da == 'error') { alert('删除失败！'); return; }
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<!--头部-->
+<div style="margin-left:20px; margin-bottom:20px;">
+<table style=" cursor:pointer;">
+<tr><td rowspan="2"><span class="title">花无</span></td><td><span class="subtitle">做一个正直的人,有益于社会的人！</span></td></tr>
+<tr><td><span class="subtitle">huawublog.v5.org</span></td></tr>
+</table>
+</div>
+<!--正文-->
+<table id="mainTab" class="table table-bordered">
+<thead>
+<tr><th>书签名</th><th>删除</th></tr>
+</thead>
+<tbody id="tb">
+
+</tbody>
+</table>
+<!--加载等待-->
+<div id="succ" class="alert alert-success alert-dismissable" style="display:none;">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>正在加载...</strong>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">书签添加</div>
+  <div class="panel-body">
+    <table class="table">
+<tr>
+<td><textarea id="BkTxt" class="form-control" rows="3" placeholder="格式：[名称][链接]" style=" height:100px;"></textarea></td>
+</tr>
+<tr><td><button id="sendBk" type="button" class="btn btn-primary btn-lg btn-block">添加</button></td></tr>
+</table>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

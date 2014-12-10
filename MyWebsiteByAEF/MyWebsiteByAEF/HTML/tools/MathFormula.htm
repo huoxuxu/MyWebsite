@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--添加此meta可以禁止手机浏览器缩放-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="../../Resource/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../../Resource/JS/bootstrap.min.js" type="text/javascript"></script>
+    <link href="../../Resource/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Resource/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <title>数学公式及定理</title>
+        <script type="text/javascript">
+            $(function () {
+                $("#ipt1").keyup(function () {
+                    $("table tbody tr")
+                .hide()
+                .filter(":contains('" + ($(this).val()) + "')")
+                .show();
+                    if ($("#ipt1").val() == "") {
+                        $("table tbody tr").show();
+                    }
+                });
+            })
+    </script>
+    <style type="text/css">
+    input:hover{background-color:Red;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+<!--头部-->
+<div class="row">
+<div class="col-sm-12">
+<h1 class="text-center">数学公式及定理汇总<small>--徐徐</small></h1>
+</div>
+</div>
+<!--主体-->
+<div class="row">
+<div class="col-sm-12">
+<p>搜索：<input id="ipt1" type="text" />可模糊搜索</p>
+<table class="table table-bordered table-hover">
+		<tr>
+			<th scope="col">id</th><th scope="col">name</th><th scope="col">type</th><th scope="col">content</th>
+		</tr><tr>
+			<td>1</td><td>直线</td><td>定理</td><td>过两点有且只有一条直线</td>
+		</tr><tr>
+			<td>2</td><td>直线</td><td>定理</td><td>两点之间线段最短</td>
+		</tr><tr>
+			<td>3</td><td>角</td><td>定理</td><td>同角或等角的补角相等</td>
+		</tr><tr>
+			<td>4</td><td>角</td><td>定理</td><td>同角或等角的余角相等</td>
+		</tr><tr>
+			<td>5</td><td>直线</td><td>定理</td><td>过一点有且只有一条直线和已知直线垂直</td>
+		</tr><tr>
+			<td>6</td><td>直线</td><td>定理</td><td>直线外一点与直线上各点连接的所有线段中，垂线段最短</td>
+		</tr><tr>
+			<td>7</td><td>平行</td><td>公理</td><td>经过直线外一点，有且只有一条直线与这条直线平行</td>
+		</tr><tr>
+			<td>8</td><td>平行</td><td>推论</td><td>如果两条直线都和第三条直线平行，这两条直线也互相平行</td>
+		</tr><tr>
+			<td>9</td><td>平行</td><td>定理</td><td>同位角相等，两直线平行</td>
+		</tr><tr>
+			<td>10</td><td>平行</td><td>定理</td><td>内错角相等，两直线平行</td>
+		</tr><tr>
+			<td>11</td><td>平行</td><td>定理</td><td>同旁内角互补，两直线平行</td>
+		</tr><tr>
+			<td>12</td><td>平行</td><td>推论</td><td>两直线平行，同位角相等 </td>
+		</tr><tr>
+			<td>13</td><td>平行</td><td>推论</td><td>两直线平行，内错角相等 </td>
+		</tr><tr>
+			<td>14</td><td>平行</td><td>推论</td><td>两直线平行，同旁内角互补 </td>
+		</tr><tr>
+			<td>15</td><td>三角形</td><td>定理</td><td>三角形两边的和大于第三边</td>
+		</tr><tr>
+			<td>16</td><td>三角形</td><td>推论</td><td>三角形两边的差小于第三边 </td>
+		</tr><tr>
+			<td>17</td><td>三角形</td><td>定理</td><td>三角形三个内角和等于180&#176;</td>
+		</tr><tr>
+			<td>18</td><td>三角形</td><td>推论</td><td>直角三角形的两个锐角互余</td>
+		</tr><tr>
+			<td>19</td><td>三角形</td><td>推论</td><td>三角形的一个外角等于和它不相邻的两个内角的和</td>
+		</tr><tr>
+			<td>20</td><td>三角形</td><td>推论</td><td>三角形的一个外角大于任何一个和它不相邻的内角</td>
+		</tr><tr>
+			<td>21</td><td>三角形</td><td>定理</td><td>全等三角形的对应边、对应角相等</td>
+		</tr><tr>
+			<td>22</td><td>三角形全等</td><td>定理</td><td>NULL有两边和它们的夹角对应相等的两个三角形全等</td>
+		</tr><tr>
+			<td>23</td><td>三角形全等</td><td>定理</td><td>有两角和它们的夹边对应相等的两个三角形全等</td>
+		</tr><tr>
+			<td>24</td><td>三角形全等</td><td>定理</td><td>有两角和其中一角的对边对应相等的两个三角形全等</td>
+		</tr><tr>
+			<td>25</td><td>三角形全等</td><td>定理</td><td>有三边对应相等的两个三角形全等</td>
+		</tr><tr>
+			<td>26</td><td>三角形</td><td>公理</td><td>有斜边和一条直角边对应相等的两个直角三角形全等</td>
+		</tr><tr>
+			<td>27</td><td>角</td><td>定理</td><td>在角的平分线上的点到这个角的两边的距离相等</td>
+		</tr><tr>
+			<td>28</td><td>角</td><td>定理</td><td>到一个角的两边的距离相同的点，在这个角的平分线上</td>
+		</tr><tr>
+			<td>29</td><td>角</td><td>定理</td><td>角的平分线是到角的两边距离相等的所有点的集合</td>
+		</tr><tr>
+			<td>30</td><td>三角形</td><td>定理</td><td>等腰三角形的性质定理 等腰三角形的两个底角相等 (即等边对等角）</td>
+		</tr><tr>
+			<td>31</td><td>三角形</td><td>推论</td><td>等腰三角形顶角的平分线平分底边并且垂直于底边</td>
+		</tr><tr>
+			<td>32</td><td>三角形</td><td>定理</td><td>等腰三角形的顶角平分线、底边上的中线和底边上的高互相重合</td>
+		</tr><tr>
+			<td>33</td><td>三角形</td><td>定理</td><td>等边三角形的各角都相等，并且每一个角都等于60&#176;</td>
+		</tr><tr>
+			<td>34</td><td>三角形</td><td>定理</td><td>如果一个三角形有两个角相等，那么这两个角所对的边也相等（等角对等边）</td>
+		</tr><tr>
+			<td>35</td><td>三角形</td><td>推论</td><td>三个角都相等的三角形是等边三角形</td>
+		</tr><tr>
+			<td>36</td><td>三角形</td><td>推论</td><td>有一个角等于60&#176;的等腰三角形是等边三角形</td>
+		</tr><tr>
+			<td>37</td><td>三角形</td><td>定理</td><td>在直角三角形中，如果一个锐角等于30&#176;那么它所对的直角边等于斜边的一半</td>
+		</tr><tr>
+			<td>38</td><td>三角形</td><td>定理</td><td>直角三角形斜边上的中线等于斜边上的一半</td>
+		</tr><tr>
+			<td>39</td><td>线段</td><td>定理</td><td>线段垂直平分线上的点和这条线段两个端点的距离相等</td>
+		</tr><tr>
+			<td>40</td><td>线段</td><td>逆定理</td><td>和一条线段两个端点距离相等的点，在这条线段的垂直平分线上</td>
+		</tr><tr>
+			<td>41</td><td>线段</td><td>定理</td><td>线段的垂直平分线可看作和线段两端点距离相等的所有点的集合</td>
+		</tr><tr>
+			<td>42</td><td>对称</td><td>定理</td><td>关于某条直线对称的两个图形是全等形</td>
+		</tr><tr>
+			<td>43</td><td>对称</td><td>定理</td><td>如果两个图形关于某直线对称，那么对称轴是对应点连线的垂直平分线</td>
+		</tr><tr>
+			<td>44</td><td>对称</td><td>定理</td><td>两个图形关于某直线对称，如果它们的对应线段或延长线相交，那么交点在对称轴上</td>
+		</tr><tr>
+			<td>45</td><td>对称</td><td>逆定理</td><td>如果两个图形的对应点连线被同一条直线垂直平分，那么这两个图形关于这条直线对称</td>
+		</tr><tr>
+			<td>46</td><td>三角形</td><td>定理</td><td>直角三角形两直角边a、b的平方和、等于斜边c的平方，即a^2+b^2=c^2</td>
+		</tr><tr>
+			<td>47</td><td>四边形</td><td>定理</td><td>四边形的内角和等于360&#176;</td>
+		</tr><tr>
+			<td>48</td><td>四边形</td><td>定理</td><td>四边形的外角和等于360&#176;</td>
+		</tr><tr>
+			<td>49</td><td>多边形</td><td>定理</td><td>多边形内角和定理 n边形的内角的和等于（n-2）&#215;180&#176;</td>
+		</tr><tr>
+			<td>50</td><td>多边形</td><td>推论</td><td>任意多边的外角和等于360&#176;</td>
+		</tr><tr>
+			<td>51</td><td>平行四边形</td><td>定理</td><td>平行四边形性质定理1 平行四边形的对角相等</td>
+		</tr><tr>
+			<td>52</td><td>平行四边形</td><td>定理</td><td>平行四边形性质定理2 平行四边形的对边相等</td>
+		</tr><tr>
+			<td>53</td><td>平行四边形</td><td>推论</td><td>夹在两条平行线间的平行线段相等</td>
+		</tr><tr>
+			<td>54</td><td>平行四边形</td><td>定理</td><td>平行四边形的对角线互相平分</td>
+		</tr><tr>
+			<td>55</td><td>平行四边形</td><td>定理</td><td>两组对角分别相等的四边形是平行四边形 </td>
+		</tr><tr>
+			<td>56</td><td>平行四边形</td><td>定理</td><td>两组对边分别相等的四边形是平行四边形</td>
+		</tr><tr>
+			<td>57</td><td>平行四边形</td><td>定理</td><td>对角线互相平分的四边形是平行四边形</td>
+		</tr><tr>
+			<td>58</td><td>平行四边形</td><td>定理</td><td>一组对边平行相等的四边形是平行四边形</td>
+		</tr><tr>
+			<td>59</td><td>矩形</td><td>定理</td><td>矩形的四个角都是直角</td>
+		</tr><tr>
+			<td>60</td><td>矩形</td><td>定理</td><td>矩形的对角线相等</td>
+		</tr><tr>
+			<td>61</td><td>矩形</td><td>定理</td><td>有三个角是直角的四边形是矩形</td>
+		</tr><tr>
+			<td>62</td><td>矩形</td><td>定理</td><td>对角线相等的平行四边形是矩形</td>
+		</tr><tr>
+			<td>63</td><td>菱形</td><td>定理</td><td>菱形的四条边都相等</td>
+		</tr><tr>
+			<td>64</td><td>菱形</td><td>定理</td><td>菱形的对角线互相垂直，并且每一条对角线平分一组对角</td>
+		</tr><tr>
+			<td>65</td><td>菱形</td><td>定理</td><td>菱形面积=对角线乘积的一半，即S=（a&#215;b）&#247;2</td>
+		</tr><tr>
+			<td>66</td><td>菱形</td><td>定理</td><td>四边都相等的四边形是菱形</td>
+		</tr><tr>
+			<td>67</td><td>菱形</td><td>定理</td><td>对角线互相垂直的平行四边形是菱形</td>
+		</tr><tr>
+			<td>68</td><td>正方形</td><td>定理</td><td>正方形的四个角都是直角，四条边都相等</td>
+		</tr><tr>
+			<td>69</td><td>正方形</td><td>定理</td><td>正方形的两条对角线相等，并且互相垂直平分，每条对角线平分一组对角</td>
+		</tr><tr>
+			<td>70</td><td>中心对称</td><td>定理</td><td>关于中心对称的两个图形是全等的</td>
+		</tr><tr>
+			<td>71</td><td>中心对称</td><td>定理</td><td>关于中心对称的两个图形，对称点连线都经过对称中心，并且被对称中心平分</td>
+		</tr><tr>
+			<td>72</td><td>对称</td><td>定理</td><td>如果两个图形的对应点连线都经过某一点，并且被这一 </td>
+		</tr><tr>
+			<td>73</td><td>等腰梯形</td><td>定理</td><td>等腰梯形在同一底上的两个角相等</td>
+		</tr><tr>
+			<td>74</td><td>等腰梯形</td><td>定理</td><td>等腰梯形的两条对角线相等</td>
+		</tr><tr>
+			<td>75</td><td>等腰梯形</td><td>定理</td><td>等腰梯形判定定理 在同一底上的两个角相等的梯形是等腰梯形</td>
+		</tr><tr>
+			<td>76</td><td>等腰梯形</td><td>定理</td><td>对角线相等的梯形是等腰梯形</td>
+		</tr><tr>
+			<td>77</td><td>平行线等分线段</td><td>定理</td><td>如果一组平行线在一条直线上截得的线段 </td>
+		</tr><tr>
+			<td>78</td><td>等腰梯形</td><td>定理</td><td>经过梯形一腰的中点与底平行的直线，必平分另一腰</td>
+		</tr><tr>
+			<td>79</td><td>平行线</td><td>定理</td><td>经过三角形一边的中点与另一边平行的直线，必平分第 </td>
+		</tr><tr>
+			<td>80</td><td>三角形</td><td>定理</td><td>三角形的中位线平行于第三边，并且等于它 </td>
+		</tr><tr>
+			<td>81</td><td>梯形</td><td>定理</td><td>梯形的中位线平行于两底，并且等于两底和的 </td>
+		</tr><tr>
+			<td>82</td><td>比例</td><td>定理</td><td>如果a:b=c:d,那么ad=bc </td>
+		</tr><tr>
+			<td>83</td><td>合比</td><td>定理</td><td>如果a／b=c／d,那么(a&#177;b)／b=(c&#177;d)／d</td>
+		</tr><tr>
+			<td>84</td><td>等比</td><td>定理</td><td>如果a／b=c／d=…=m／n(b+d+…+n≠0),那么 </td>
+		</tr><tr>
+			<td>85</td><td>平行线分线段成比例</td><td>定理</td><td>三条平行线截两条直线，所得的对应 </td>
+		</tr><tr>
+			<td>86</td><td>平行线</td><td>定理</td><td>平行于三角形一边的直线截其他两边（或两边的延长线），所得的对应线段成比例</td>
+		</tr><tr>
+			<td>87</td><td>平行线</td><td>定理</td><td>如果一条直线截三角形的两边（或两边的延长线）所得的对应线段成比例，那么这条直线平行于三角形的第三边</td>
+		</tr><tr>
+			<td>88</td><td>平行线</td><td>定理</td><td>平行于三角形的一边，并且和其他两边相交的直线，所截得的三角形的三边与原三角形三边对应成比例</td>
+		</tr><tr>
+			<td>89</td><td>相似</td><td>定理</td><td>平行于三角形一边的直线和其他两边（或两边的延长线）相交，所构成的三角形与原三角形相似</td>
+		</tr><tr>
+			<td>90</td><td>相似</td><td>定理</td><td>两角对应相等，两三角形相似（ASA）</td>
+		</tr><tr>
+			<td>91</td><td>相似</td><td>定理</td><td>直角三角形被斜边上的高分成的两个直角三角形和原三角形相似 </td>
+		</tr><tr>
+			<td>92</td><td>相似</td><td>定理</td><td>两边对应成比例且夹角相等，两三角形相似（SAS）</td>
+		</tr><tr>
+			<td>93</td><td>相似</td><td>定理</td><td>三边对应成比例，两三角形相似（SSS）</td>
+		</tr><tr>
+			<td>94</td><td>相似</td><td>定理</td><td>如果一个直角三角形的斜边和一条直角边与另一个直角三 </td>
+		</tr><tr>
+			<td>95</td><td>相似</td><td>定理</td><td>相似三角形对应高的比，对应中线的比与对应角平 </td>
+		</tr><tr>
+			<td>96</td><td>相似</td><td>定理</td><td>相似三角形周长的比等于相似比</td>
+		</tr><tr>
+			<td>97</td><td>相似</td><td>定理</td><td>相似三角形面积的比等于相似比的平方</td>
+		</tr><tr>
+			<td>98</td><td>函数</td><td>定理</td><td>任意锐角的正弦值等于它的余角的余弦值，任意锐角的余弦值等 </td>
+		</tr><tr>
+			<td>99</td><td>函数</td><td>定理</td><td>任意锐角的正切值等于它的余角的余切值，任意锐角的余切值等 </td>
+		</tr><tr>
+			<td>100</td><td>圆</td><td>定理</td><td>圆是定点的距离等于定长的点的集合</td>
+		</tr><tr>
+			<td>101</td><td>圆</td><td>定理</td><td>圆的内部可以看作是圆心的距离小于半径的点的集合</td>
+		</tr><tr>
+			<td>102</td><td>圆</td><td>定理</td><td>圆的外部可以看作是圆心的距离大于半径的点的集合 </td>
+		</tr><tr>
+			<td>103</td><td>圆</td><td>定理</td><td>同圆或等圆的半径相等</td>
+		</tr><tr>
+			<td>104</td><td>圆</td><td>定理</td><td>到定点的距离等于定长的点的轨迹，是以定点为圆心，定长为半 </td>
+		</tr><tr>
+			<td>105</td><td>垂直平分线</td><td>定理</td><td>和已知线段两个端点的距离相等的点的轨迹，是着条线段的垂直 </td>
+		</tr><tr>
+			<td>106</td><td>角平分线</td><td>定理</td><td>到已知角的两边距离相等的点的轨迹，是这个角的平分线 </td>
+		</tr><tr>
+			<td>107</td><td>平行</td><td>定理</td><td>到两条平行线距离相等的点的轨迹，是和这两条平行线平行且距 </td>
+		</tr><tr>
+			<td>108</td><td>圆</td><td>定理</td><td>不在同一直线上的三点确定一个圆</td>
+		</tr><tr>
+			<td>109</td><td>圆</td><td>定理</td><td>垂直于弦的直径平分这条弦并且平分弦所对的两条弧</td>
+		</tr><tr>
+			<td>110</td><td>圆</td><td>定理</td><td>平分弦（不是直径）的直径垂直于弦，并且平分弦所对的两条弧 </td>
+		</tr><tr>
+			<td>111</td><td>圆</td><td>定理</td><td>平分弦所对的一条弧的直径，垂直平分弦，并且平分弦所对的另一条弧</td>
+		</tr><tr>
+			<td>112</td><td>圆</td><td>定理</td><td>圆的两条平行弦所夹的弧相等</td>
+		</tr><tr>
+			<td>113</td><td>圆</td><td>定理</td><td>圆是以圆心为对称中心的中心对称图形</td>
+		</tr><tr>
+			<td>114</td><td>圆</td><td>定理</td><td>在同圆或等圆中，相等的圆心角所对的弧相等，所对的弦 </td>
+		</tr><tr>
+			<td>115</td><td>圆</td><td>定理</td><td>在同圆或等圆中，如果两个圆心角、两条弧、两条弦或两 </td>
+		</tr><tr>
+			<td>116</td><td>圆</td><td>定理</td><td>一条弧所对的圆周角等于它所对的圆心角的一半</td>
+		</tr><tr>
+			<td>117</td><td>圆</td><td>定理</td><td>同弧或等弧所对的圆周角相等；同圆或等圆中，相等的圆周角所对的弧也相等</td>
+		</tr><tr>
+			<td>118</td><td>圆</td><td>定理</td><td>半圆（或直径）所对的圆周角是直角；90&#176;的圆周角所 </td>
+		</tr><tr>
+			<td>119</td><td>三角形</td><td>定理</td><td>如果三角形一边上的中线等于这边的一半，那么这个三角形是直角三角形</td>
+		</tr><tr>
+			<td>120</td><td>圆</td><td>定理</td><td>圆的内接四边形的对角互补，并且任何一个外角都等于它 </td>
+		</tr><tr>
+			<td>121</td><td>切线</td><td>定理</td><td>经过半径的外端并且垂直于这条半径的直线是圆的切线</td>
+		</tr><tr>
+			<td>122</td><td>切线</td><td>定理</td><td>圆的切线垂直于经过切点的半径</td>
+		</tr><tr>
+			<td>123</td><td>切线</td><td>定理</td><td>经过圆心且垂直于切线的直线必经过切点</td>
+		</tr><tr>
+			<td>124</td><td>切线</td><td>定理</td><td>经过切点且垂直于切线的直线必经过圆心</td>
+		</tr><tr>
+			<td>125</td><td>切线</td><td>定理</td><td>从圆外一点引圆的两条切线，它们的切线长相等， </td>
+		</tr><tr>
+			<td>126</td><td>圆</td><td>定理</td><td>圆的外切四边形的两组对边的和相等</td>
+		</tr><tr>
+			<td>127</td><td>弦切角</td><td>定理</td><td>弦切角定理 弦切角等于它所夹的弧对的圆周角</td>
+		</tr><tr>
+			<td>128</td><td>弦切角</td><td>定理</td><td>如果两个弦切角所夹的弧相等，那么这两个弦切角也相等</td>
+		</tr><tr>
+			<td>129</td><td>相交弦</td><td>定理</td><td>圆内的两条相交弦，被交点分成的两条线段长的积 </td>
+		</tr><tr>
+			<td>130</td><td>相交弦</td><td>推论</td><td>如果弦与直径垂直相交，那么弦的一半是它分直径所成的 </td>
+		</tr><tr>
+			<td>131</td><td>切割线</td><td>定理</td><td>从圆外一点引圆的切线和割线，切线长是这点到割 </td>
+		</tr><tr>
+			<td>132</td><td>切割线</td><td>推论</td><td>从圆外一点引圆的两条割线，这一点到每条割线与圆的交点的两条线段长的积相等</td>
+		</tr><tr>
+			<td>133</td><td>圆</td><td>定理</td><td>如果两个圆相切，那么切点一定在连心线上</td>
+		</tr><tr>
+			<td>134</td><td>相交</td><td>定理</td><td>相交两圆的连心线垂直平分两圆的公共弦</td>
+		</tr><tr>
+			<td>135</td><td>圆</td><td>定理</td><td>把圆分成n(n≥3): </td>
+		</tr><tr>
+			<td>136</td><td>圆</td><td>定理</td><td>把圆分成n(n≥3):</td>
+		</tr><tr>
+			<td>137</td><td>圆</td><td>定理</td><td>任何正多边形都有一个外接圆和一个内切圆，这两个圆是同心圆</td>
+		</tr><tr>
+			<td>138</td><td>正n边形</td><td>定理</td><td>正n边形的半径和边心距把正n边形分成2n个全等的直角三角形</td>
+		</tr><tr>
+			<td>139</td><td>正n边形</td><td>定理</td><td>正n边形的面积Sn=pnrn／2 p表示正n边形的周长</td>
+		</tr><tr>
+			<td>140</td><td>正三角形</td><td>定理</td><td>正三角形面积√3a／4 a表示边长</td>
+		</tr><tr>
+			<td>141</td><td>正n边形</td><td>定理</td><td>如果在一个顶点周围有k个正n边形的角，由于这些角的和应为 </td>
+		</tr><tr>
+			<td>142</td><td>弧长</td><td>定理</td><td>弧长计算公式：L=n兀R／180</td>
+		</tr><tr>
+			<td>143</td><td>扇形</td><td>定理</td><td>扇形面积公式：S扇形=n兀R^2／360=LR／2 </td>
+		</tr><tr>
+			<td>144</td><td>内公切线</td><td>定理</td><td>内公切线长= d-(R-r) 外公切线长= d-(R+r)</td>
+		</tr><tr>
+			<td>145</td><td>三角函数</td><td>两角和</td><td>sin(A+B)=sinAcosB+cosAsinB sin(A-B)=sinAcosB-sinBcosA </td>
+		</tr><tr>
+			<td>146</td><td>三角函数</td><td>两角和</td><td>cos(A+B)=cosAcosB-sinAsinB cos(A-B)=cosAcosB+sinAsinB</td>
+		</tr><tr>
+			<td>147</td><td>三角函数</td><td>两角和</td><td>tan(A+B)=(tanA+tanB)/(1-tanAtanB) tan(A-B)=(tanA-tanB)/(1+tanAtanB) </td>
+		</tr><tr>
+			<td>148</td><td>三角函数</td><td>两角和</td><td>ctg(A+B)=(ctgActgB-1)/(ctgB+ctgA) ctg(A-B)=(ctgActgB+1)/(ctgB-ctgA)</td>
+		</tr><tr>
+			<td>149</td><td>三角函数</td><td>倍角公式</td><td>tan2A=2tanA/(1-tan2A) ctg2A=(ctg2A-1)/2ctga</td>
+		</tr><tr>
+			<td>150</td><td>三角函数</td><td>倍角公式</td><td>cos2a=cos2a-sin2a=2cos2a-1=1-2sin2a</td>
+		</tr><tr>
+			<td>151</td><td>三角函数</td><td>半角函数</td><td>sin(A/2)=√((1-cosA)/2) sin(A/2)=-√((1-cosA)/2)</td>
+		</tr><tr>
+			<td>152</td><td>三角函数</td><td>半角公式</td><td>cos(A/2)=√((1+cosA)/2) cos(A/2)=-√((1+cosA)/2)</td>
+		</tr><tr>
+			<td>153</td><td>三角函数</td><td>半角公式</td><td>tan(A/2)=√((1-cosA)/((1+cosA)) tan(A/2)=-√((1-cosA)/((1+cosA))</td>
+		</tr><tr>
+			<td>154</td><td>三角函数</td><td>半角公式</td><td>ctg(A/2)=√((1+cosA)/((1-cosA)) ctg(A/2)=-√((1+cosA)/((1-cosA))</td>
+		</tr><tr>
+			<td>155</td><td>三角函数</td><td>和差化积</td><td>2sinAcosB=sin(A+B)+sin(A-B) 2cosAsinB=sin(A+B)-sin(A-B)</td>
+		</tr><tr>
+			<td>156</td><td>三角函数</td><td>和差化积</td><td>2cosAcosB=cos(A+B)-sin(A-B) -2sinAsinB=cos(A+B)-cos(A-B)</td>
+		</tr><tr>
+			<td>157</td><td>三角函数</td><td>和差化积</td><td>sinA+sinB=2sin((A+B)/2)cos((A-B)/2 cosA+cosB=2cos((A+B)/2)sin((A-B)/2)</td>
+		</tr><tr>
+			<td>158</td><td>三角函数</td><td>和差化积</td><td>tanA+tanB=sin(A+B)/cosAcosB tanA-tanB=sin(A-B)/cosAcosB</td>
+		</tr><tr>
+			<td>159</td><td>三角函数</td><td>和差化积</td><td>ctgA+ctgBsin(A+B)/sinAsinB -ctgA+ctgBsin(A+B)/sinAsinB</td>
+		</tr><tr>
+			<td>160</td><td>三角函数</td><td>正弦定理</td><td>a/sinA=b/sinB=c/sinC=2R 注： 其中 R 表示三角形的外接圆半径</td>
+		</tr><tr>
+			<td>161</td><td>三角函数</td><td>余弦定理</td><td>b2=a2+c2-2accosB 注：角B是边a和边c的夹角</td>
+		</tr><tr>
+			<td>162</td><td>圆</td><td>标准方程</td><td>(x-a)2+(y-b)2=r2 注：（a,b）是圆心坐标</td>
+		</tr><tr>
+			<td>163</td><td>圆</td><td>一般方程</td><td>x2+y2+Dx+Ey+F=0 注：D2+E2-4F&gt;0 </td>
+		</tr><tr>
+			<td>164</td><td>抛物线</td><td>标准方程</td><td>y2=2px y2=-2px x2=2py x2=-2py </td>
+		</tr><tr>
+			<td>165</td><td>直棱柱侧面积</td><td>定理</td><td>S=c*h</td>
+		</tr><tr>
+			<td>166</td><td>斜棱柱侧面积</td><td>定理</td><td>S=c'*h</td>
+		</tr><tr>
+			<td>167</td><td>正棱锥侧面积</td><td>定理</td><td>S=1/2c*h'</td>
+		</tr><tr>
+			<td>168</td><td>正棱台侧面积</td><td>定理</td><td>S=1/2(c+c')h'</td>
+		</tr><tr>
+			<td>169</td><td>圆台侧面积</td><td>定理</td><td>S=1/2(c+c')l=pi(R+r)l</td>
+		</tr><tr>
+			<td>170</td><td>球表面积</td><td>定理</td><td>S=4pi*r2</td>
+		</tr><tr>
+			<td>171</td><td>圆柱侧面积</td><td>定理</td><td>S=c*h=2pi*h</td>
+		</tr><tr>
+			<td>172</td><td>圆锥侧面积</td><td>定理</td><td>S=1/2*c*l=pi*r*l</td>
+		</tr><tr>
+			<td>173</td><td>弦长公式</td><td>定理</td><td>l=a*r a是圆心角的弧度数r &gt;0</td>
+		</tr><tr>
+			<td>174</td><td>扇形面积</td><td>定理</td><td>s=1/2*l*r</td>
+		</tr><tr>
+			<td>175</td><td>锥体体积</td><td>定理</td><td>V=1/3*S*H</td>
+		</tr><tr>
+			<td>176</td><td>圆锥体体积</td><td>定理</td><td>V=1/3*pi*r2h </td>
+		</tr><tr>
+			<td>177</td><td>斜棱柱体积</td><td>定理</td><td>V=S'L</td>
+		</tr>
+	</table>
+</div>
+</div>
+<!--足部-->
+<div class="row">
+<div id="footer" class="col-sm-12">
+&copy; 徐徐所有！
+</div>  
+</div>
+</div>
+
+</body>
+</html>

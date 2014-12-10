@@ -1,0 +1,17 @@
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\CacheManager.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\EncryptManager.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\MySql.Data.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Newtonsoft.Json.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\SqlConnectionStringMagager.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Interop.Shell32.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Release\MyWebsiteByAEF.csprojResolveAssemblyReference.cache
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Release\Interop.Shell32.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Release\MyWebsiteByAEF.csproj.ResolveComReference.cache
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Release\MyWebsiteByAEF.Resource.Res.MyRes.resources
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Release\MyWebsiteByAEF.csproj.GenerateResource.Cache
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Release\MyWebsiteByAEF.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Release\MyWebsiteByAEF.pdb

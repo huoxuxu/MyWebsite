@@ -1,0 +1,89 @@
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csprojResolveAssemblyReference.cache
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.Resource.Res.MyRes.resources
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csproj.GenerateResource.Cache
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\CacheManager.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\EncryptManager.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\MySql.Data.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Newtonsoft.Json.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\SqlConnectionStringMagager.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.pdb
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Interop.Shell32.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\Interop.Shell32.dll
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csproj.ResolveComReference.cache
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.svg
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.eot
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.ttf
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.woff
+E:\BaiDuYun\WebAmass\MyWebsiteByAEF\MyWebsiteByAEF\bin\JsonNETManager.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\Interop.Shell32.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.Resource.Res.MyRes.resources
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.svg
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.eot
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.ttf
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.woff
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.pdb
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\CacheManager.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\EncryptManager.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\JsonNETManager.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\MySql.Data.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\Newtonsoft.Json.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\SqlConnectionStringMagager.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.pdb
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\bin\Interop.Shell32.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.dll
+C:\Documents and Settings\Administrator\桌面\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.pdb
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.svg
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.eot
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.ttf
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.woff
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.pdb
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\CacheManager.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\EncryptManager.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\JsonNETManager.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\MySql.Data.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\Newtonsoft.Json.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\SqlConnectionStringMagager.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.pdb
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\bin\Interop.Shell32.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csprojResolveAssemblyReference.cache
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\Interop.Shell32.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csproj.ResolveComReference.cache
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.Resource.Res.MyRes.resources
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csproj.GenerateResource.Cache
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.dll
+E:\BaiDuYun\WebAmass\我的站点\网页\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.pdb
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.svg
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.eot
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.ttf
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\Resource\fonts\glyphicons-halflings-regular.woff
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\MyWebsiteByAEF.pdb
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\CacheManager.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\EncryptManager.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\JsonNETManager.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\MySql.Data.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\Newtonsoft.Json.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\SqlConnectionStringMagager.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\Common.pdb
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\bin\Interop.Shell32.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csprojResolveAssemblyReference.cache
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\Interop.Shell32.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csproj.ResolveComReference.cache
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.Resource.Res.MyRes.resources
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.csproj.GenerateResource.Cache
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.dll
+E:\Desk\MyWebsiteByAEF\MyWebsiteByAEF\obj\Debug\MyWebsiteByAEF.pdb

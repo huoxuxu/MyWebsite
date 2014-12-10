@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--添加此meta可以禁止手机浏览器缩放-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="../../Resource/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../../Resource/JS/bootstrap.min.js" type="text/javascript"></script>
+    <link href="../../Resource/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Resource/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <title>网站错误信息</title>
+    <script type="text/javascript">
+        $(function () {
+            $("#succ").show();
+            $.post('../../NET/index.ashx?method=GetErrorLog', {}, function (da) {
+                $("#succ").hide();
+                if (da == "error") { alert("读取失败！"); return; }
+                $("#tb").empty().append(da);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<table id="mainTab" class="table table-bordered">
+<thead>
+<tr><th>Id</th><th>网站错误列表</th></tr>
+</thead>
+<tbody id="tb">
+
+</tbody>
+</table>
+<!--加载等待-->
+<div id="succ" class="alert alert-success alert-dismissable" style="display:none;">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>正在加载...</strong>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

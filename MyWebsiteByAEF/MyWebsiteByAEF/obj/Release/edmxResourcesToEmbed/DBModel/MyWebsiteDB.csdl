@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="solutionmanageModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="MyDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="questionandanswer" EntityType="solutionmanageModel.questionandanswer" />
+    <EntitySet Name="buginfo" EntityType="solutionmanageModel.buginfo" />
+    <EntitySet Name="chatinfo" EntityType="solutionmanageModel.chatinfo" />
+    <EntitySet Name="errorlog" EntityType="solutionmanageModel.errorlog" />
+  </EntityContainer>
+  <EntityType Name="questionandanswer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Question" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Answer" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Keyword" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Hits" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="buginfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TriggerBug" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ExpectedBehavior" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ObservedBehavior" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DoneWhat" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Repaired" />
+    <Property Type="DateTime" Name="CreateTime" />
+    <Property Type="String" Name="Comment" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="chatinfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Message" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="Boolean" Name="ReadFlag" Nullable="false" />
+  </EntityType>
+  <EntityType Name="errorlog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ErrorMsg" Nullable="false" MaxLength="3000" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="Comment" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

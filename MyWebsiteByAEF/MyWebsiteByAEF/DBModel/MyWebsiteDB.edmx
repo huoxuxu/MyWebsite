@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="solutionmanageModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.1" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="solutionmanageModelStoreContainer">
+          <EntitySet Name="buginfo" EntityType="solutionmanageModel.Store.buginfo" store:Type="Tables" Schema="3219_solutionmanage" />
+          <EntitySet Name="chatinfo" EntityType="solutionmanageModel.Store.chatinfo" store:Type="Tables" Schema="3219_solutionmanage" />
+          <EntitySet Name="errorlog" EntityType="solutionmanageModel.Store.errorlog" store:Type="Tables" Schema="3219_solutionmanage" />
+          <EntitySet Name="questionandanswer" EntityType="solutionmanageModel.Store.questionandanswer" store:Type="Tables" Schema="3219_solutionmanage" />
+        </EntityContainer>
+        <EntityType Name="buginfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="char" Nullable="false" MaxLength="40" />
+          <Property Name="TriggerBug" Type="varchar" Nullable="false" MaxLength="2000" />
+          <Property Name="ExpectedBehavior" Type="varchar" MaxLength="500" />
+          <Property Name="ObservedBehavior" Type="varchar" MaxLength="500" />
+          <Property Name="DoneWhat" Type="varchar" MaxLength="300" />
+          <Property Name="Repaired" Type="bit" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="Comment" Type="varchar" />
+        </EntityType>
+        <EntityType Name="chatinfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="char" Nullable="false" MaxLength="40" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Message" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="ReadFlag" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="errorlog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="char" Nullable="false" MaxLength="40" />
+          <Property Name="ErrorMsg" Type="varchar" Nullable="false" MaxLength="3000" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="varchar" />
+        </EntityType>
+        <EntityType Name="questionandanswer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="char" Nullable="false" MaxLength="40" />
+          <Property Name="Question" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="Answer" Type="text" Nullable="false" />
+          <Property Name="Keyword" Type="varchar" MaxLength="100" />
+          <Property Name="Hits" Type="int" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="solutionmanageModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MyDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="questionandanswer" EntityType="solutionmanageModel.questionandanswer" />
+          <EntitySet Name="buginfo" EntityType="solutionmanageModel.buginfo" />
+          <EntitySet Name="chatinfo" EntityType="solutionmanageModel.chatinfo" />
+          <EntitySet Name="errorlog" EntityType="solutionmanageModel.errorlog" />
+        </EntityContainer>
+        <EntityType Name="questionandanswer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="String" Name="Id" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Question" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Answer" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Keyword" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Hits" Nullable="false" />
+          <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="buginfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="String" Name="Id" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TriggerBug" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ExpectedBehavior" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ObservedBehavior" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DoneWhat" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Repaired" />
+          <Property Type="DateTime" Name="CreateTime" />
+          <Property Type="String" Name="Comment" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="chatinfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="String" Name="Id" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Message" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+          <Property Type="Boolean" Name="ReadFlag" Nullable="false" />
+        </EntityType>
+        <EntityType Name="errorlog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="String" Name="Id" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ErrorMsg" Nullable="false" MaxLength="3000" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+          <Property Type="String" Name="Comment" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="solutionmanageModelStoreContainer" CdmEntityContainer="MyDBEntities">
+          <EntitySetMapping Name="questionandanswer">
+            <EntityTypeMapping TypeName="solutionmanageModel.questionandanswer">
+              <MappingFragment StoreEntitySet="questionandanswer">
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="Hits" ColumnName="Hits" />
+                <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="buginfo">
+            <EntityTypeMapping TypeName="solutionmanageModel.buginfo">
+              <MappingFragment StoreEntitySet="buginfo">
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="Repaired" ColumnName="Repaired" />
+                <ScalarProperty Name="DoneWhat" ColumnName="DoneWhat" />
+                <ScalarProperty Name="ObservedBehavior" ColumnName="ObservedBehavior" />
+                <ScalarProperty Name="ExpectedBehavior" ColumnName="ExpectedBehavior" />
+                <ScalarProperty Name="TriggerBug" ColumnName="TriggerBug" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="chatinfo">
+            <EntityTypeMapping TypeName="solutionmanageModel.chatinfo">
+              <MappingFragment StoreEntitySet="chatinfo">
+                <ScalarProperty Name="ReadFlag" ColumnName="ReadFlag" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="errorlog">
+            <EntityTypeMapping TypeName="solutionmanageModel.errorlog">
+              <MappingFragment StoreEntitySet="errorlog">
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="ErrorMsg" ColumnName="ErrorMsg" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="MyWebsiteDB">
+        <EntityTypeShape EntityType="solutionmanageModel.questionandanswer" Width="1.5" PointX="0.75" PointY="0.75" Height="2.1610522460937496" />
+        <EntityTypeShape EntityType="solutionmanageModel.buginfo" Width="1.5" PointX="2.375" PointY="0.75" Height="2.5430916341145826" />
+        <EntityTypeShape EntityType="solutionmanageModel.chatinfo" Width="1.5" PointX="5.625" PointY="0.75" Height="1.9700325520833317" />
+        <EntityTypeShape EntityType="solutionmanageModel.errorlog" Width="1.5" PointX="4" PointY="0.75" Height="1.7790128580729174" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

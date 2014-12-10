@@ -1,0 +1,11 @@
+﻿返回格式：是否成功，成功、失败信息，值
+如：{"success":true,"info":"","total":,"rows":[]}
+
+
+
+/*详情*/
+//            var XQTemplate = "{{if(it.success){}}\
+//            {{if(it.total>0){}}\
+//            \
+//            {{}else{}}<p>NoData！</p>{{}}}\
+//            {{}else{}}<p>{{=it.info}}</p>{{}}}";

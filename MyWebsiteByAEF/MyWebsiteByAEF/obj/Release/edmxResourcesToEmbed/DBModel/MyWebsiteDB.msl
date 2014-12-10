@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="solutionmanageModelStoreContainer" CdmEntityContainer="MyDBEntities">
+    <EntitySetMapping Name="questionandanswer">
+      <EntityTypeMapping TypeName="solutionmanageModel.questionandanswer">
+        <MappingFragment StoreEntitySet="questionandanswer">
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Hits" ColumnName="Hits" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="buginfo">
+      <EntityTypeMapping TypeName="solutionmanageModel.buginfo">
+        <MappingFragment StoreEntitySet="buginfo">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Repaired" ColumnName="Repaired" />
+          <ScalarProperty Name="DoneWhat" ColumnName="DoneWhat" />
+          <ScalarProperty Name="ObservedBehavior" ColumnName="ObservedBehavior" />
+          <ScalarProperty Name="ExpectedBehavior" ColumnName="ExpectedBehavior" />
+          <ScalarProperty Name="TriggerBug" ColumnName="TriggerBug" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chatinfo">
+      <EntityTypeMapping TypeName="solutionmanageModel.chatinfo">
+        <MappingFragment StoreEntitySet="chatinfo">
+          <ScalarProperty Name="ReadFlag" ColumnName="ReadFlag" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="errorlog">
+      <EntityTypeMapping TypeName="solutionmanageModel.errorlog">
+        <MappingFragment StoreEntitySet="errorlog">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="ErrorMsg" ColumnName="ErrorMsg" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
